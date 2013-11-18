@@ -6,13 +6,13 @@ First you'll need to make sure your system has a c++ compiler.  For OSX, XCode w
 
 ### Install script
 
-To install you could use the [install script](https://github.com/creationix/nvm/blob/master/install.sh) (requires Git) using cURL:
+To install you could use the [install script](https://github.com/xtuple/nvm/blob/master/install.sh) (requires Git) using cURL:
 
-    curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+    curl https://raw.github.com/xtuple/nvm/master/install.sh | sh
 
 or Wget:
 
-    wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
+    wget -qO- https://raw.github.com/xtuple/nvm/master/install.sh | sh
 
 <sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile` or `~/.profile`).</sub>
 
@@ -23,7 +23,7 @@ For manual install create a folder somewhere in your filesystem with the `nvm.sh
 
 Or if you have `git` installed, then just clone it:
 
-    git clone https://github.com/creationix/nvm.git ~/.nvm
+    git clone https://github.com/xtuple/nvm.git ~/.nvm
 
 To activate nvm, you need to source it from your bash shell
 
