@@ -350,6 +350,10 @@ nvm() {
              "$NVM_DIR/bin/node-${t}" \
              "$NVM_DIR/bin/node-${t}.tar.gz" \
              "$NVM_DIR/$VERSION" 2>/dev/null
+
+      sudo rm /usr/local/bin/node 2> /dev/null
+      sudo rm /usr/local/bin/npm 2> /dev/null
+
       echo "Uninstalled node $VERSION"
 
       # Rm any aliases that point to uninstalled version.
@@ -413,6 +417,10 @@ nvm() {
       export MANPATH
       export NVM_PATH="$NVM_DIR/$VERSION/lib/node"
       export NVM_BIN="$NVM_DIR/$VERSION/bin"
+      sudo rm /usr/local/bin/node 2> /dev/null
+      sudo rm /usr/local/bin/npm 2> /dev/null
+      sudo ln -s $NVM_BIN/node /usr/local/bin/node
+      sudo ln -s $NVM_BIN/npm /usr/local/bin/npm
       echo "Now using node $VERSION"
     ;;
     "run" )
