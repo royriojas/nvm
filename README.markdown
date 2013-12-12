@@ -6,31 +6,15 @@ First you'll need to make sure your system has a c++ compiler.  For OSX, XCode w
 
 ### Install script
 
-To install you could use the [install script](https://github.com/xtuple/nvm/blob/master/install.sh) (requires Git) using cURL:
-
-    curl https://raw.github.com/xtuple/nvm/master/install.sh | sh
+To install you could use the [install script](https://github.com/xtuple/nvm/blob/master/install.sh) (requires Git):
 
 or Wget:
 
-    wget -qO- https://raw.github.com/xtuple/nvm/master/install.sh | sh
+    wget -qO- https://raw.github.com/xtuple/nvm/master/install.sh | sudo bash
+
+This will install into `/usr/loca/nvm`
 
 <sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile` or `~/.profile`).</sub>
-
-
-### Manual install
-
-For manual install create a folder somewhere in your filesystem with the `nvm.sh` file inside it.  I put mine in a folder called `nvm`.
-
-Or if you have `git` installed, then just clone it:
-
-    git clone https://github.com/xtuple/nvm.git ~/.nvm
-
-To activate nvm, you need to source it from your bash shell
-
-    source ~/.nvm/nvm.sh
-
-I always add this line to my `~/.bashrc` or `~/.profile` file to have it automatically sourced upon login.
-Often I also put in a line to use a specific version of node.
 
 ## Usage
 
