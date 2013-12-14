@@ -419,8 +419,8 @@ nvm() {
       export NVM_BIN="$NVM_DIR/$VERSION/bin"
       sudo rm /usr/local/bin/node 2> /dev/null
       sudo rm /usr/local/bin/npm 2> /dev/null
-      sudo ln -s $NVM_BIN/node /usr/local/bin/node
-      sudo ln -s $NVM_BIN/npm /usr/local/bin/npm
+      sudo ln -s $NVM_BIN/node /usr/local/bin/node 2> /dev/null
+      sudo ln -s $NVM_BIN/npm /usr/local/bin/npm 2> /dev/null
       echo "Now using node $VERSION"
     ;;
     "run" )
